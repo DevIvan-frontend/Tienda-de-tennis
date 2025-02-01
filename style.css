@@ -1,0 +1,774 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family:  'Helvetica Neue', 'Helvetica';
+                                                
+}
+  
+.boton button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1.5px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: white;
+}
+
+.boton-izq button,
+.boton-derecha button {
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.boton-izq button:hover,
+.boton-derecha button:hover {
+    background-color: #C4E50B;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.boton-derecha{
+    margin-left: 1vw;
+}
+
+.btn-historia {
+    width: 13vw;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    color: #222;
+    border: 2px solid #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 20vw;
+    white-space: nowrap;
+}
+
+.btn-historia:hover{
+    color:white;
+    background-color: #222;
+}
+
+.card .numeracion {
+    display: inline-flex;
+    margin: 1vw;
+    padding: 1.2vw;
+    background-color: #cbe346;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1dvw;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.col-central {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controles{
+    margin-bottom: 4vw;
+    margin-right: 4vw;
+}
+
+.controles > div[style="flex-direction: row;"] {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-right: 6vw;
+}
+
+.description {
+    display: flex;
+    width: 100vw;  
+    height: calc(100vw * (392 / 1437)); 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f4f8;
+}
+
+.des-contenido {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.discurso {
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    color: gray;
+    line-height: 2.3vw;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 3vw;
+    margin-left: 1vw;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 0.5vw;
+  height: 0.5vw;
+  margin-right: 1.2vw;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #C4E50B;
+  transform: scale(1.2);
+}
+
+.dot-active{
+    background-color: #C4E50B;
+    transform: scale(1.2);
+}
+
+.footer-texto {
+    text-decoration: none;
+    color: black;
+    margin-right: 3.7vw;
+    font-weight: lighter;
+    font-size: 1vw;
+}
+
+footer {
+    width: 100vw;
+    height: 14.10vw; 
+    background-color: #cbe346; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5%;
+}
+
+.hero {
+    height: 54.51vw;
+    width: 100vw;
+    background: url('recursos/group@2x.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.hero .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero .btn-acerca {
+    align-content: center;
+    display: inline-block;
+    margin-top: 8.5vh;
+    margin-left: 3.7vw;
+    height: 3.69vw;
+    width: 18.7vw;
+    padding: 10px 30px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: lighter;
+    letter-spacing: 1.1px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-acerca:hover{
+    background-color: white;
+    color: black;
+}
+
+.hero .highlight {
+    color: #cbe346;
+    font-weight: bold;
+}
+
+.hero-content {
+    text-align: left;
+    color: white;
+    width: 60vw;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    margin-left: 4.5vw;
+    font-size: 3.65vw;
+    font-weight: lighter;
+    line-height: 1;
+    width: 50vw;
+    align-content: center;
+}
+
+.icono{
+    width: 2.1vw;
+}
+
+.imagen-producto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.imagen-producto.active {
+    opacity: 1;
+}
+
+.language-switch {
+    margin-left: 37vw;
+}
+
+.language-switch .lang {
+    display: inline-block;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 1.1vw;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.linea-vertical {
+    margin-left: 7.2vw;
+    height: 54.51vw;
+    width: 4px;
+    background-color: white;
+}
+
+.lista-imagen {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 4vw;
+    margin-top: 5vw;
+}
+
+.logo-header {
+    margin: 43px;
+    margin-right: 66px;
+    width: 2.5vw;
+}
+
+.mover {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.mover{
+    margin-top: 50px;
+}
+
+.nav-links {
+    margin-top: 4.5vw;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    width: 3vw;
+    font-weight: lighter;
+    position: relative;
+    margin-left: 4vw;
+    letter-spacing: 1.4px;
+}
+
+.navbar nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    font-weight: lighter;
+}
+
+.nuestras-raquetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pocision-texto {
+    color: white;
+    text-align: left;
+    max-width: 400px; 
+    margin-top: 2.2vw;
+    margin-left: 5.7vw;
+}
+
+.pocision-texto {
+    color: white;
+    text-align: left;
+    max-width: 400px; 
+    font-weight: lighter;
+    line-height: 4vh;
+}
+.foto-modelo {
+    background: url('recursos/action-athlete-ball-342361@2x.png') no-repeat center center/cover;
+    width: 100vw;
+    height: 40.69vw;
+}
+.pocision-texto h3 {
+    font-size: 1.3vw;
+    font-weight: lighter;
+    line-height: 2vw;
+    margin-top: 1.9vw;
+    width: 19vw;
+    color: rgba(255, 255, 255);
+}
+
+.productos-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 37vw;
+    height: 32.68vw;
+    background: url('recursos/ball-color-court-1405355@3x.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.productos-info {
+    position: relative;
+    width: 37vw;
+    height: 32.68vw;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.raq {
+    font-weight: bold;
+    font-size: 8vh;
+}
+
+.raq {
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.raqueta-scroll {
+    width: 63svw;
+    height: 32.68vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    user-select: none;
+    scroll-snap-type: x mandatory;
+}
+
+.raqueta-scroll:active {
+    cursor: grabbing;
+}
+
+.raqueta-scroll .card {
+    margin: 5%;
+    flex: 0 0 auto;
+    margin-right: 0%;
+    background: url('recursos/group-10@3x.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 20vw;
+    height: 23.89vw;
+    border-radius: 0.3in;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 2vw;
+    gap: 15px; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.tennis-comentario {
+    font-size: 3.48vw;
+    font-weight: lighter;
+    color: #222;
+}
+
+.tennis-highlight {
+    color: #cbe346;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 7vw;
+    letter-spacing: 4px;
+}
+
+.texto-tennis {
+    font-size: 3.5vw;
+    font-weight: 300;
+    line-height: 2;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 770px){
+    .language-switch {
+        margin-left: 0vw;
+    }
+    .language-switch .lang{
+        font-size: 3vw;
+    }
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar nav ul li a{
+        font-size: 3vw;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 65vw;
+        color: white;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+
+    .head-pestañas {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .head-pestañas.active {
+        display: flex;
+    }
+
+    .head-pestañas ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .head-pestañas ul li a {
+        font-size: 18px;
+    }
+
+    .linea-vertical {
+        display: none;
+    }
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+        padding: 10%;
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        margin-top: 10vw;
+        font-size: 32px;
+    }
+
+    .btn-acerca {
+        width: 60vw !important;
+        max-width: 300px; 
+        text-align: center; 
+        margin-top: 10vw !important;
+        font-size: 2vw !important;
+        height: 6vw !important;
+        border-width: 4vw;
+    }
+
+    .description {
+        height: auto; 
+        padding: 40px 20px;
+    }
+
+    .des-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .tennis-comentario {
+        font-size: 36px;
+    }
+
+    .discurso {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .btn-historia {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin-top: 30px;
+        width: 200px;
+    }
+
+    .nuestras-raquetas {
+        flex-direction: column;
+    }
+    .raqueta-scroll {
+        width: 100svw;
+        height: auto;
+        display: flex;
+    }
+    .raqueta-scroll .card{
+        margin: 5%;
+        margin-right: 0%;
+        width: 60vw;
+        height: 60vw;
+        border-radius: 0.3in;
+        
+    }
+    .productos-info {
+        position: relative;
+        width: 100vw;
+        height: 88.3vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 8%; 
+    }
+
+    .lista-imagen {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
+    .imagen-producto {
+        flex: 0 0 100%;
+        transition: opacity 1s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        margin-left: 120px;
+    }
+    
+    .imagen-producto.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    
+    .imagen-producto:not(.active) {
+        transform: translateX(100%);
+    }
+
+    .pocision-texto {
+        color: white;
+        text-align: left;
+        max-width: 400px;
+        margin-top: 25vw; 
+    }
+
+    .texto-tennis {
+        font-size: 8vw;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .raq {
+        font-size: 8vw;
+        font-weight: 700;
+        
+    }
+
+    .tennis-highlight{
+        font-size: 16px;
+    }
+
+    .pocision-texto h3 {
+        font-size: 3vw;
+        margin-top: 10px;
+        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.8);
+        width: 60vw;
+    }
+
+    .logo-header{
+        width: 10vw;
+        margin: 10px;
+    }
+
+    .mover {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .boton button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 1.5px solid white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        color: white;
+    }
+
+    .boton-derecha button,
+    .boton-izq button{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hero .btn-acerca {
+        font-size: 16px;
+        width: 8vw;
+    }
+    
+    .card .numeracion {
+        width: 6vw;
+        height: 6vw;
+        margin: 3vw;
+        font-size: 4dvw;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .left-section {
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .icono{
+        width: 9vw;
+    }
+
+    .logo {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        width: 12vw;
+
+    }
+
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer-texto {
+        font-size: 3vw;
+    }
+    
+}
